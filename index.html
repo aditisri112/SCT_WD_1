@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blossom & Books</title>
+
+<style>
+/*  BASE */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background:#f7f1e3;
+  scroll-behavior:smooth;
+  color:#3b1f5c;
+}
+
+/*  NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 0;
+  z-index:1000;
+
+  background:rgba(255,248,240,0.6);
+  backdrop-filter: blur(14px);
+  border-bottom:1px solid rgba(0,0,0,0.05);
+  transition:0.4s ease;
+}
+
+nav.scrolled{
+  background:rgba(235,224,210,0.95);
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  list-style:none;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#5a4a42;
+  padding:10px 16px;
+  border-radius:25px;
+  transition:0.3s ease;
+}
+
+nav ul li a:hover{
+  background:#d8c3a5;
+  transform:translateY(-2px);
+}
+
+nav ul li a.active{
+  background:#b8c1ec;
+  color:#1f1f1f;
+}
+
+/*  HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+
+  background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") center/cover no-repeat;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(247,241,227,0.75);
+}
+
+.hero-content{
+  position:relative;
+  max-width:700px;
+}
+
+.hero h1{
+  font-size:52px;
+  margin-bottom:10px;
+  color:#6601ff;
+}
+
+.hero p{
+  font-size:18px;
+  color:#000000;
+}
+
+/*  SECTIONS */
+section{
+  padding:100px 60px;
+}
+
+/*  DARKER PINK BOOKS */
+#books{
+  background:#d48aa8;
+}
+
+/*  DARKER PINK FLOWERS */
+#flowers{
+  background:#c96f8a;
+}
+
+/* ABOUT */
+#about{
+  background:#cddafd;
+}
+
+/*  CONTACT */
+#contact{
+  background:#cdeac0;
+}
+
+/*  GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+/*  CARDS */
+.card{
+  background:#fffaf3;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:15px;
+}
+
+.card-content h3{
+  margin-bottom:5px;
+  color:#3b1f5c;
+}
+
+.card-content p{
+  color:#4b2e83;
+}
+
+/*  TITLES */
+.title{
+  font-size:36px;
+  text-align:center;
+  color:#3b1f5c;
+}
+
+.subtitle{
+  text-align:center;
+  margin-top:10px;
+  color:#4b2e83;
+}
+
+/*  NAV ACTIVE SMOOTH */
+html{
+  scroll-behavior:smooth;
+}
+</style>
+</head>
+
+<body>
+
+<!--  NAV -->
+<nav id="navbar">
+  <ul>
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#books" class="nav-link">Books</a></li>
+    <li><a href="#flowers" class="nav-link">Flowers</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!--  HERO -->
+<div class="hero" id="home">
+  <div class="hero-content">
+    <h1>Blossom & Books</h1>
+    <p>Aesthetic bookstore & flower sanctuary </p>
+  </div>
+</div>
+
+<!--  BOOKS -->
+<section id="books">
+  <h2 class="title">Book Collection</h2>
+  <p class="subtitle">Soft stories, timeless classics, cozy reads</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" />
+      <div class="card-content">
+        <h3>Classic Novels</h3>
+        <p>Timeless literature for deep readers.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" />
+      <div class="card-content">
+        <h3>Cozy Reading</h3>
+        <p>Warm vibes for peaceful evenings.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93" />
+      <div class="card-content">
+        <h3>Book Stacks</h3>
+        <p>Endless worlds waiting to be explored.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FLOWERS -->
+<section id="flowers">
+  <h2 class="title"> Flower Shop</h2>
+  <p class="subtitle">Fresh blooms & soft pastel arrangements</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" />
+      <div class="card-content">
+        <h3>Rose Bouquet</h3>
+        <p>Soft romantic pastel roses.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551" />
+      <div class="card-content">
+        <h3>Spring Mix</h3>
+        <p>Fresh seasonal flower blend.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" />
+      <div class="card-content">
+        <h3>Lavender Calm</h3>
+        <p>Relaxing aromatic lavender bouquet.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  ABOUT -->
+<section id="about">
+  <h2 class="title">About Us</h2>
+  <p class="subtitle">A peaceful blend of literature and nature 🌿</p>
+</section>
+
+<!--  CONTACT -->
+<section id="contact">
+  <h2 class="title">Contact</h2>
+  <p class="subtitle">Email - blossombooks@gmail.com<br>
+    Phone no. - 1234325623
+    <br>
+    Address - Shop no. 15, Juhu, Mumbai
+</p>
+</section>
+
+<script>
+// NAV SCROLL EFFECT
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+//  ACTIVE LINK
+const sections = document.querySelectorAll("section, .hero");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(sec => {
+    const top = sec.offsetTop - 120;
+    if (pageYOffset >= top) {
+      current = sec.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
