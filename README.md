@@ -37,45 +37,6 @@ A soft, elegant web interface combining:
 
 ---
 
-## 📁 Project Structure
-# 🌸📚 Blossom & Books
-
-Aesthetic **Bookstore + Flower Shop** landing page built using **HTML, CSS, and JavaScript**.  
-This project focuses on a modern pastel UI, smooth interactions, and a visually pleasing design inspired by minimalist “Pinterest-style” aesthetics.
-
----
-
-## ✨ Preview
-
-A soft, elegant web interface combining:
-- 📚 A cozy bookstore section
-- 🌸 A beautiful flower shop section
-- 🎀 Smooth navigation and scroll effects
-- 🌿 Pastel + beige aesthetic design
-
----
-
-## 🚀 Features
-
-- 📌 Fixed glassmorphism navigation bar
-- 🎨 Dark pink themed sections for Books & Flowers
-- 💜 Elegant dark purple typography
-- ✨ Hover animations on cards and menu items
-- 📍 Scroll-based active navigation highlighting
-- 🖼️ High-quality aesthetic images (Unsplash)
-- 📱 Responsive grid layout
-- 🌿 Soft pastel + beige UI theme
-
----
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3 (Flexbox + Grid + Animations)
-- Vanilla JavaScript
-
----
-
 
 ## 🌸 Sections
 
@@ -94,13 +55,6 @@ This project was built for **web development internship practice** to demonstrat
 - Frontend layout structuring  
 - DOM manipulation using JavaScript  
 - Responsive and aesthetic design thinking  
-
----
-
-## 📸 Images Used
-
-Images are sourced from:
-- https://unsplash.com
 
 ---
 
